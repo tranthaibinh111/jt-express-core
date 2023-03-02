@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>JtExpressCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Configuration -->
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <!-- Json -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <!-- REST HTTP API -->
+    <PackageReference Include="RestSharp" Version="108.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\Models\" />
+    <Folder Include="Interfaces\Models\Common\" />
+    <Folder Include="Interfaces\Services\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\Common\" />
+    <Folder Include="Models\Common\Response\" />
+    <Folder Include="Models\JtExpress\" />
+    <Folder Include="Models\JtExpress\Fee\" />
+    <Folder Include="Models\JtExpress\Fee\Filter\" />
+    <Folder Include="Models\JtExpress\Fee\Get\" />
+    <Folder Include="Models\JtExpress\Response\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Abstract\" />
+    <Folder Include="Services\JtExpress\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Resources %28copy%29.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SpecificOccurrence.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Resources %28copy%29.Designer.cs">
+      <DependentUpon>SpecificOccurrence.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
