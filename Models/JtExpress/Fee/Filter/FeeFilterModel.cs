@@ -19,21 +19,26 @@ namespace JtExpressCore.Models.JtExpress
   public class FeeFilterModel
   {
     // Mã khách hàng
-    public string cusname { get; set; }
+    [JsonProperty(PropertyName = "cusname")]
+    public string customerId { get; set; }
     // Giá trị hàng hóa
-    public string goodsvalue { get; set; }
+    [JsonProperty(PropertyName = "goodsvalue")]
+    public string total { get; set; }
     // COD
-    public string itemsvalue { get; set; }
+    [JsonProperty(PropertyName = "itemsvalue")]
+    public string cod { get; set; }
     // Trọng lượng
     public string weight { get; set; }
-    // Phường xã nhận
-    public string destareacode { get; set; }
-    // Quận huyện gửi
-    public string sendsitecode { get; set; }
     // Loại phí
-    public string feetype { get; set; }
+    [JsonProperty(PropertyName = "feetype")]
+    public string feeType { get; set; }
     // Loại vận chuyển
-    public string producttype { get; set; }
+    [JsonProperty(PropertyName = "producttype")]
+    public string productType { get; set; }
+    // Thông tin người gửi
+    public AddressFilterModel sender { get; set; }
+    // Thông tin người nhận
+    public AddressFilterModel receiver { get; set; }
 
     public string toJson()
     {

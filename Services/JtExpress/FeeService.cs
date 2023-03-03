@@ -36,7 +36,7 @@ using JtExpressCore.Models.JtExpress;
 using JtExpressCore.Services.Abstract;
 #endregion
 
-namespace JtExpressCore.Services.Ghtk
+namespace JtExpressCore.Services.JtExpress
 {
   public sealed class FeeService: AbstractService
   {
