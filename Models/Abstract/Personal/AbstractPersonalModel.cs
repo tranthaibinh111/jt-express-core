@@ -9,7 +9,7 @@ using JtExpressCore.Interfaces.Models.JtExpress;
 
 namespace JtExpressCore.Models.Abstract
 {
-  public class AbstractPersonalModel: IPersonalModel
+  public abstract class AbstractPersonalModel: IPersonalModel
   {
     [JsonProperty(PropertyName = "prov")]
     public string province { get; set; }
