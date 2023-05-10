@@ -19,14 +19,14 @@ namespace JtExpressCore {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Build.Tasks.StronglyTypedResourceBuilder", "15.1.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class SpecificOccurrence {
+    internal class SpecificOccurrences {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal SpecificOccurrence() {
+        internal SpecificOccurrences() {
         }
         
         /// <summary>
@@ -36,7 +36,7 @@ namespace JtExpressCore {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("JtExpressCore.SpecificOccurrence", typeof(SpecificOccurrence).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("JtExpressCore.SpecificOccurrence", typeof(SpecificOccurrences).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

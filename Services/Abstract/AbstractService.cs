@@ -125,12 +125,12 @@ namespace JtExpressCore.Services.Abstract
         var errMsg = String.Empty;
 
         // Description
-        var description = Description.ResourceManager.GetString(reason);
+        var description = Descriptions.ResourceManager.GetString(reason);
 
         if (!String.IsNullOrEmpty(description)) errMsg += description;
 
         // Specific Occurrence
-        var specificOccurrence = SpecificOccurrence.ResourceManager.GetString(reason);
+        var specificOccurrence = SpecificOccurrences.ResourceManager.GetString(reason);
 
         if (!String.IsNullOrEmpty(specificOccurrence)) errMsg += specificOccurrence;
 

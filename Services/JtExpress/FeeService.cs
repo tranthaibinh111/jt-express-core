@@ -43,6 +43,7 @@ namespace JtExpressCore.Services.JtExpress
     public FeeService(string companyId, string token) : base(companyId, token) {}
 
     #region Public
+    #region Get
     /// <summary>
     /// Tính phí JT Express
     ///
@@ -97,6 +98,7 @@ namespace JtExpressCore.Services.JtExpress
         throw;
       }
     }
+    #endregion
     #endregion
   }
 }
